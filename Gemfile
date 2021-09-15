@@ -21,16 +21,16 @@ gem 'haml-rails'
 gem 'high_voltage'
 # gem "inifile"
 # gem 'jwt'
-gem 'nokogiri', '>= 1.11.0'
+gem 'nokogiri', '>= 1.11.4'
 # gem 'omniauth-rails_csrf_protection'
 # gem 'paranoia', '~> 2.2'
 # gem 'pathspec'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 6.1.0', '>= 6.1.1'
+gem 'rails', '~> 6.1.0', '>= 6.1.4.1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
-gem 'puma', '>= 4.3.5'
+gem 'puma', '>= 4.3.8'
 # gem 'record_tag_helper'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
@@ -57,6 +57,9 @@ gem 'simple_form'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
+
+
+
 
 group :production do
   gem 'rack-timeout'
