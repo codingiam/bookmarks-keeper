@@ -38,6 +38,7 @@ yarn-debug.log*
 /.idea
 
 .env.local
+.envrc
 
 /vendor/bundle
 

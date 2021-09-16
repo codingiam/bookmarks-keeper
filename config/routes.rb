@@ -10,17 +10,6 @@ Sidekiq::Web.use Rack::Auth::Basic do |_, password|
 end
 
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  namespace :admin do
-    DashboardManifest::DASHBOARDS.each do |dashboard_resource|
-      resources dashboard_resource
-    end
-
-    # resources :masquerades, param: :username, only: [:show, :destroy]
-
-    # root controller: DashboardManifest::ROOT_DASHBOARD, action: :index
-  end
-
   mount Sidekiq::Web, at: "/jobs"
 
   # get "/auth/github/callback", to: "sessions#create"
