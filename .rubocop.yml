@@ -21,7 +21,17 @@ Lint/MissingCopEnableDirective:
   Enabled: false
 
 Metrics:
-   Enabled: true
+  Enabled: true
 
 Layout/LineLength:
   Max: 80
+  IgnoredPatterns: ['^ *# ']
+
+Layout/SpaceInsideHashLiteralBraces:
+  Enabled: true
+  EnforcedStyle: space
+  EnforcedStyleForEmptyBraces: no_space
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*_spec.rb'

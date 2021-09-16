@@ -44,3 +44,5 @@ yarn-debug.log*
 TAGS
 
 /config/credentials/development.key
+
+.vscode/

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'sinatra'
+require "sinatra"
 
 class FakeHttp < Sinatra::Base
 end
