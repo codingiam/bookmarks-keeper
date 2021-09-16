@@ -70,6 +70,7 @@ group :development, :test do
   gem "rspec-rails", ">= 3.4"
   gem "ruby-prof"
   gem "attractor"
+  gem "attractor-ruby"
   gem "pry-byebug"
   gem "pry-rails"
 end

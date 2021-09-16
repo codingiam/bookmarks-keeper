@@ -70,7 +70,7 @@ GEM
     arrayfields (4.9.2)
     ast (2.4.2)
     attr_extras (6.2.4)
-    attractor (2.0.4)
+    attractor (2.3.0)
       churn (>= 1.0.4)
       descriptive_statistics
       flog (~> 4.0)
@@ -80,6 +80,8 @@ GEM
       sinatra
       thor
       tilt
+    attractor-ruby (0.2.0)
+      attractor (~> 2.0)
     autoprefixer-rails (9.8.5)
       execjs
     bindex (0.8.1)
@@ -401,6 +403,7 @@ PLATFORMS
 DEPENDENCIES
   attr_extras
   attractor
+  attractor-ruby
   bookmarks_keeper-cfg!
   bootsnap (>= 1.4.2)
   bootstrap (~> 4.5.0)
