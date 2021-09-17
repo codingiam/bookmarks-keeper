@@ -17,4 +17,8 @@ class ApplicationController < ActionController::Base # :nodoc:
   def force_https?
     true
   end
+
+  def locals(values)
+    render locals: values
+  end
 end

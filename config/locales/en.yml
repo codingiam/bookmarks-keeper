@@ -34,3 +34,12 @@ en:
     submit:
       search:
         submit: Search
+
+  activemodel:
+    errors:
+      models:
+        search:
+          attributes:
+            q:
+              format: "%{message}"
+              blank: "Search terms can't be blank"

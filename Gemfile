@@ -52,8 +52,8 @@ gem "jbuilder", "~> 2.7"
 
 gem "bootstrap", "~> 4.5.0"
 
-gem "reform-rails"
 gem "simple_form"
+gem "activemodel-form"
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", ">= 1.4.2", require: false
@@ -80,7 +80,7 @@ group :development do
   gem "web-console", ">= 4.0.4"
   gem "listen", ">= 3.0.5", "< 3.2"
 
-  gem 'solargraph', "~> 0.43.0", require: false
+  gem "solargraph", "~> 0.43.0", require: false
 
   gem "rubocop", "~> 1.11.0", require: false
   gem "rubocop-rspec", "~> 1.41.0", require: false

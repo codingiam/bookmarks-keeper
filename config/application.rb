@@ -55,6 +55,8 @@ module BookmarksKeeper
     config.exceptions_app = routes
     config.active_job.queue_adapter = :sidekiq
 
+    config.active_model.i18n_customize_full_message = true
+
     # Don't generate system test files.
     config.generators.system_tests = nil
   end
