@@ -1,3 +1,6 @@
 = simple_form_for search, as: '', url: search_path, method: :get, html: { id: :search, class: '' } do |f|
+  = f.error_notification message: I18n.t('simple_form.error_notification.default_message')
+  = f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present?
+
   = f.input :q, label: false
   = f.button :submit, I18n.t('helpers.submit.search.submit'), name: nil, class: 'btn-primary'
