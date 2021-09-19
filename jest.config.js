@@ -7,4 +7,5 @@ module.exports = {
   snapshotSerializers: [],
   testPathIgnorePatterns: ['app/javascript/__tests__/setup.js'],
   unmockedModulePathPatterns: [],
+  testEnvironment: 'jsdom'
 };
