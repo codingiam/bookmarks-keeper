@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Url:
+  = resource.url
+%p
+  %b State:
+  = resource.state
+
+= link_to 'Edit', edit_resource_path(resource)
+\|
+= link_to 'Back', resources_path

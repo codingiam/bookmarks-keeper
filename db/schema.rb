@@ -10,6 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2021_09_19_193115) do
+
+  create_table "resources", force: :cascade do |t|
+    t.text "url", limit: 2048, null: false
+    t.string "state", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["state"], name: "index_resources_on_state"
+    t.index ["url"], name: "index_resources_on_url", unique: true
+  end
 
 end

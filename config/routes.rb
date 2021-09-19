@@ -23,5 +23,7 @@ Rails.application.routes.draw do
 
   resource :search, only: :show
 
+  resources :resources
+
   root to: "pages#home"
 end

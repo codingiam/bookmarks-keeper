@@ -11,9 +11,10 @@
     = stylesheet_link_tag 'application', media: 'all'
   %body.mb-5
     %header.container-fluid
-      %nav.navbar.bg-light
+      %nav.navbar.navbar-expand-lg.bg-light
         %a.navbar-brand.nav-link.text-dark{ href: root_path } Bookmarks Keeper
-        %a.nav-link.text-dark{ href: "#" } Sign in
+        %a.nav-link.text-dark{ href: resources_path } Resources
+        %a.ml-auto.nav-link.text-dark{ href: "#" } Sign in
     %br
     %main.container-fluid
       = yield
