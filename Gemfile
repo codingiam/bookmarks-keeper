@@ -80,7 +80,7 @@ group :development do
   gem "web-console", ">= 4.0.4"
   gem "listen", ">= 3.0.5", "< 3.2"
 
-  gem "solargraph", "~> 0.43.0", require: false
+  gem "solargraph", "~> 0.44.0", require: false
 
   gem "rubocop", "~> 1.11.0", require: false
   gem "rubocop-rspec", "~> 1.41.0", require: false
