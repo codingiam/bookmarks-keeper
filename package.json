@@ -16,6 +16,7 @@
     "@rails/webpacker": "5.4.3",
     "babel-loader": "8.2.2",
     "classnames": "^2.3.1",
+    "command-line-args": "^5.2.1",
     "compression-webpack-plugin": "^6.1.1",
     "es6-promise": "^4.2.8",
     "expose-loader": "^1.0.3",
@@ -33,19 +34,20 @@
     "resolve-url-loader": "^4.0.0",
     "url-loader": "^4.1.1",
     "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12",
     "webpack-manifest-plugin": "^2.0.4",
     "webpack-merge": "^4.1.0"
   },
   "version": "0.1.0",
   "devDependencies": {
     "@babel/eslint-parser": "^7.15.4",
+    "@webpack-cli/serve": "0.1.8",
     "babel-jest": "^27.2.0",
     "eslint": "^7.32.0",
     "eslint-plugin-import": "^2.24.2",
     "identity-obj-proxy": "^3.0.0",
     "jest-cli": "^27.2.0",
     "sinon": "^11.1.2",
-    "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3"
   },
   "repository": {
