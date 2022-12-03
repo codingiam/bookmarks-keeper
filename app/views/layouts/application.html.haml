@@ -23,4 +23,4 @@
       .p-3.bg-light.small.text-center
         %span.text-muted &copy; 2021
         CodingIAm
-    = javascript_pack_tag 'application'
+    = javascript_include_tag "application", "data-turbo-track": "reload", defer: true
