@@ -5,7 +5,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "2.7.6"
+ruby "2.7.7"
 
 gem "dotenv-rails", require: "dotenv/rails-now", group: [:development, :test]
 
@@ -14,7 +14,7 @@ Dir.glob(File.expand_path("vendor/gems/**/*.gemspec"))
   .each { |path| gem File.basename(path), path: path }
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.0.4"
+gem "rails", "~> 7.0.6"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
@@ -100,22 +100,31 @@ group :development do
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
 
-  gem "attractor"
-  gem "attractor-ruby"
+  gem "attractor", require: false
+  gem "attractor-ruby", require: false
 
   gem "ruby-prof"
 
   gem "bundler-audit", require: false
-  gem "foreman"
+  gem "ruby_audit", require: false
 
-  gem "solargraph", "~> 0.44.0", require: false
+  gem "foreman", require: false
 
-  gem "rubocop", "~> 1.11.0", require: false
-  gem "rubocop-rspec", "~> 1.41.0", require: false
-  gem "rubocop-performance", "~> 1.10.1", require: false
-  gem "rubocop-rails", "~> 2.5.2", require: false
-  gem "standard", "~> 1.0.4", require: false
-  gem "reek", "~> 6.0.6", require: false
+  gem "solargraph", require: false
+  gem "ruby-lsp", require: false
+  gem "ripper-tags", require: false
+
+  gem "rubocop", require: false
+  gem "rubocop-rspec", require: false
+  gem "rubocop-performance", require: false
+  gem "rubocop-rails", require: false
+  gem "standard", require: false
+
+  gem "reek", require: false
+  gem "flay", require: false
+  gem "flog", require: false
+
+  gem "rubycritic", require: false
 end
 
 group :test do
