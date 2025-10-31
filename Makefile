@@ -13,6 +13,13 @@ ifeq ($(INSTALL_DIR),)
     INSTALL_DIR = $(shell go env GOPATH)/bin
 endif
 
+# --- Tools ---
+GOOSE := go tool -modfile=go.tool.mod goose
+SQLC := go tool -modfile=go.tool.mod sqlc
+
+DB_PATH = ./db/local.sqlite3
+SQLC_CONFIG = ./db/sqlc.yaml
+
 # --- Targets ---
 
 .PHONY: all build test install run clean migrate-up migrate-down sqlc-generate
@@ -52,11 +59,14 @@ clean:
 # Run pending migrations to update the database schema.
 migrate-up:
 	@echo "Running database migrations UP..."
+	$(GOOSE) -env=.env.local up
 
 # Reverts the last set of migrations.
 migrate-down:
 	@echo "Rolling back database migrations DOWN..."
+	$(GOOSE) -env=.env.local down
 
 # This generates Go code from SQL queries.
 sqlc-generate:
 	@echo "Generating Go code from SQL queries..."
+	$(SQLC) generate -f $(SQLC_CONFIG)
